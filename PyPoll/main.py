@@ -42,7 +42,7 @@ print(f"Winner: {winner}")
 print(f"__________________________________")
 
 #set file path for summary file
-summary = 'summary.txt'
+summary = os.path.join('Analysis','summary.txt')
 
 #print to text file
 

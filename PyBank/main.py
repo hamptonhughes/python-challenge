@@ -83,7 +83,7 @@ with open(csvpath) as csvfile:
     print(f"Greatest Increase in profits: {minmonth} (${mindiff})")
 
 #set file path for summary file
-summary = 'summary.txt'
+summary = os.path.join('Analysis','summary.txt')
 #print to text file
 
 lines = [f"Financial Analysis",f"_______________________________________________________________________________",f"Total Months: {monthsum}",f"Total: ${profits}",f"Average Change: ${mean_difference}",f"Greatest Increase in profits: {maxmonth} (${maxdiff})",f"Greatest Increase in profits: {minmonth} (${mindiff})"]
